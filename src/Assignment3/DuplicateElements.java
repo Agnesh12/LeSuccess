@@ -13,7 +13,7 @@ public class DuplicateElements {
                 Result.add(num);
             }
             else {
-                Check.put(num, 1);
+                Check.put(num, 0);
             }
         }
         return Result;
