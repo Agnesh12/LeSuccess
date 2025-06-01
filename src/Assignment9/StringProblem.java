@@ -19,7 +19,7 @@ public class StringProblem {
             Current += (Check) ? 1 : -1;
         }
         int aCount = 0;
-        for(int i = 0; i < Str.length(); i++) {
+        for(int i = 0; i < Result.length(); i++) {
             char Ch = Result.charAt(i);
             if(Ch == 'a') {
                 aCount++;
