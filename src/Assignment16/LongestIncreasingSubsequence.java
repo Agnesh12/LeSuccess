@@ -6,8 +6,8 @@ public class LongestIncreasingSubsequence {
     public static void main(String[] args) {
         int[] arr = {1, 3, 5, 4, 7};
         int n = arr.length;
-        int[] length = new int[n]; // LIS length ending at i
-        int[] count = new int[n];  // Count of such LISs
+        int[] length = new int[n];
+        int[] count = new int[n];
         Arrays.fill(length, 1);
         Arrays.fill(count, 1);
 

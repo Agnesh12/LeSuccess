@@ -8,7 +8,7 @@ public class WildCardMatching {
         boolean[][] dp = new boolean[m + 1][n + 1];
         dp[0][0] = true;
 
-        // Fill the first row for pattern like "*", "**", etc.
+
         for (int j = 1; j <= n; j++) {
             if (p.charAt(j - 1) == '*') {
                 dp[0][j] = dp[0][j - 1];
@@ -20,7 +20,7 @@ public class WildCardMatching {
                 char sc = s.charAt(i - 1);
                 char pc = p.charAt(j - 1);
                 if (pc == '*') {
-                    dp[i][j] = dp[i][j - 1] || dp[i - 1][j]; // * = empty or one char
+                    dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
                 } else if (pc == '?' || pc == sc) {
                     dp[i][j] = dp[i - 1][j - 1];
                 }
